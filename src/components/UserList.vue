@@ -35,7 +35,7 @@
   <pagination :value="currentPage" @input="(e) => currentPage = e" :per-page="perPage" :total-count="usersActionLength" :pagination-breaker="1"></pagination>
 </template>
 
-<script setup async>
+<script setup>
   import { ref, watch } from 'vue';
   import { computed } from '@vue/reactivity';
   import fetchJSON from '../composables/FetchData.js';
